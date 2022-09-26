@@ -1,0 +1,196 @@
+.footer-container{
+      background-color: var(--negro);
+      color: white;
+      padding: 2%;
+}
+.footer-container .text-footer{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 1.2em;
+      height: 100%;
+      width: 100%;
+}
+.text.t{
+      width: 25%;
+
+      
+}.red{
+      margin-top: 3%;
+      font-size: 1.3em;
+      width: 50%;
+      display: flex; 
+      justify-content: space-between;
+
+ }.text t3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 2%;     
+}
+
+
+
+/* resolucion desktop*/
+@media screen and (min-width: 1025px){
+      .logo i{
+            display: none;
+      }
+      .menu hr{
+            display: none;
+      }.text.t hr{
+            display: none;
+      }.text.t2 hr{
+            display: none;
+      }.features-title{
+            font-size: 2em;
+      }#textosl p{
+            font-size: 2.6em;
+        }
+    }
+/*Resolucion media tablet*/
+@media screen and (min-width: 680px) and (max-width: 1024px) {
+
+      .logo i{
+            display: none;
+      }
+      .menu hr{
+            display: none;
+      }.text.t hr{
+            display: none;
+      }.text.t2 hr{
+            display: none;
+      }#op{
+            width: 30%;
+      }.ip{
+            font-size: 1em;
+        }.footer-container{
+            font-size: 0.8em;
+        }nav{
+            font-size: 1.2em;
+        }#textosl p{
+            font-size: 1.5em;
+        }
+}
+
+/* Resoluciòn Mobile*/
+@media screen and (min-width:320px) and (max-width: 679px) {
+      
+      .logo{
+            background-color: var(--negro2);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+            padding: 1%;
+        }
+        
+      .logo img{
+            width: 100%;
+          max-width: 200px;
+      }
+      .logo i{
+            color: var(--blanco);
+          font-size: 2rem;
+      }
+      .menu{
+            background-color: rgba(1, 10, 52, 0.838);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;  
+            
+        }
+        .menu hr{
+            width: 100%;
+            background-color: var(--blanco);
+        }
+        .item{
+        padding: 1rem;
+                
+      }
+      nav a{
+            color: var(--blanco);
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        .menu button{
+            padding: 1rem;
+            background-color:transparent;
+            border: none;
+            border-radius: 3px;
+            font-size: 1em;
+            padding: 0.5rem;
+            font-family: 'Marcellus', serif;
+            color: var(--blanco);
+        }nav{
+            display: flex;
+            flex-direction: column;
+            padding: 1%;
+            background-color: #000;            
+        }.menu{
+            width: 100%;
+            display: none;
+            
+        }#hijo{
+            display: none;
+        }#hijo1{
+            width: 100%;
+        }#textosl p{
+            font-size: 1.2em;
+        }.text-footer{
+            display: flex;
+            flex-direction: column;
+        }.text.t{
+            width: 100%;
+        }.text.t2{
+            width: 100%;
+        }.text.t3{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }#separador{
+            margin-top: 0%;
+        }.inf{
+            display: flex;
+            flex-direction: column;
+           
+            font-size: 0.8em;
+        }.linea{
+            width: 100%;
+            margin-left:0%;
+        }.titulo{
+            height: 4em;
+        }.titulo h1{
+            font-size: 0.8em;
+        }.carrusel{
+            margin-left: -15%;
+            width: 130%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }#op{
+            width: 30%;
+            
+        }.ip{
+            font-size: 0.8em;
+        }.opiniones{
+            overflow: hidden;
+        } .menu.active{
+            display: grid;
+            transform: translateY(0%);
+        }
+        .mapa{
+            padding: 0.5em;
+        }.enc{
+            width: 100%;
+        }.estrellas i{
+            font-size: 0.5em;
+        }.footer-container{
+            font-size: 0.8em;
+        }
+}
