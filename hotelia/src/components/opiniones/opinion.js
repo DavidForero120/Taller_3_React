@@ -9,7 +9,7 @@ class opinion extends React.Component{
                   <div class="carrusel">   
                               <div id="op" >
                                     <div class="enc">
-                                    <img src={perfil} />
+                                    <img src={perfil} alt="perfil"/>
                                     <div class="estrellas">
                                           <h5>Diego rodriguez</h5>
                                           <div>
@@ -30,7 +30,7 @@ class opinion extends React.Component{
                               </div>
                               <div id="op">
                                     <div class="enc">
-                                          <img src={perfil} />
+                                          <img src={perfil} alt="perfil" />
                                           <div class="estrellas">
                                                 <h5>Diana Garcia</h5>
                                                 <div>
@@ -53,7 +53,7 @@ class opinion extends React.Component{
                               </div>
                               <div id="op">
                                     <div class="enc">
-                                          <img src={perfil} />
+                                          <img src={perfil} alt="perfil" />
                                           <div class="estrellas">
                                                 <h5>Diego rodriguez</h5>
                                                 <div>

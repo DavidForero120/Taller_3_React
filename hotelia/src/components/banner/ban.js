@@ -6,7 +6,7 @@ class ban extends React.Component{
             return(
                   <section class="slider">  
             <div class="contenido">
-                  <img src={slide}  id="pt" />
+                  <img src={slide}  id="pt" alt="slide"/>
                   <div id="textosl">
                         <p>Lorem ipsum dolor sir ameteliter,
                               consectetur adipiscing elit.

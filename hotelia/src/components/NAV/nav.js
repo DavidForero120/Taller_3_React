@@ -1,6 +1,7 @@
 import React from 'react';
 import './nav.css';
 import log from './HoteliaHorizontalBlanco.svg';
+import {Link} from 'react-router-dom';
 class nav extends React.Component{
 
       render(){
@@ -8,14 +9,14 @@ class nav extends React.Component{
                   <nav>
                         
                   <div class="logo">
-                        <img src={log} />
+                        <img src={log} alt="logo" />
                         <i class="fa-solid fa-bars hamb"></i>
                   </div>
                   <div class="menu">
-                        <a href="index.html" class="item">Inicio</a>
-                        <a href="ubicacion.html" class="item">Ubícanos</a>
-                        <a href="opiniones.html" class="item">Opiniones</a>
-                        <a href="login.html" class="item"><button ><i class="fa-solid fa-user"></i>Iniciar Sesión</button></a>
+                        <Link to="/" className="item">Inicio</Link>
+                        <Link to="/" className="item">Ubícanos</Link>
+                        <Link to="/" className="item">Opiniones</Link>
+                        <a href="login.html" className="item"><button ><i class="fa-solid fa-user"></i>Iniciar Sesión</button></a>
                   </div>
             </nav>
                   );
