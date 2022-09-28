@@ -36,18 +36,18 @@ nav{
 }nav a:hover{
       background-color:#0B3860;
       width: 100%;
-}.logo{
+}.logo1{
       width: 250px;
 }
 
-.logo img{
+.logo1 img{
       height: 3.6rem;  
       width: 100%;   
 }
 
 /* resolucion desktop*/
 @media screen and (min-width: 1025px){
-      .logo i{
+      .logo1 i{
             display: none;
       }
       .menu hr{
@@ -65,7 +65,7 @@ nav{
 /*Resolucion media tablet*/
 @media screen and (min-width: 680px) and (max-width: 1024px) {
 
-      .logo i{
+      .logo1 i{
             display: none;
       }
       .menu hr{
@@ -90,7 +90,7 @@ nav{
 /* Resoluciòn Mobile*/
 @media screen and (min-width:320px) and (max-width: 679px) {
       
-      .logo{
+      .logo1{
             background-color: var(--negro2);
             display: flex;
             align-items: center;
@@ -100,11 +100,11 @@ nav{
             padding: 1%;
         }
         
-      .logo img{
+      .logo1 img{
             width: 100%;
           max-width: 200px;
       }
-      .logo i{
+      .logo1 i{
             color: var(--blanco);
           font-size: 2rem;
       }

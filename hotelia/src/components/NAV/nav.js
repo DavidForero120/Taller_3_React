@@ -8,15 +8,15 @@ class nav extends React.Component{
             return(
                   <nav>
                         
-                  <div class="logo">
+                  <div class="logo1">
                         <img src={log} alt="logo" />
                         <i class="fa-solid fa-bars hamb"></i>
                   </div>
                   <div class="menu">
                         <Link to="/" className="item">Inicio</Link>
                         <Link to="/" className="item">Ubícanos</Link>
-                        <Link to="/" className="item">Opiniones</Link>
-                        <a href="login.html" className="item"><button ><i class="fa-solid fa-user"></i>Iniciar Sesión</button></a>
+                        <Link to="/registro" className="item">Opiniones</Link>
+                        <Link to="/" className="item"><button ><i class="fa-solid fa-user"></i>Iniciar Sesión</button></Link>
                   </div>
             </nav>
                   );
