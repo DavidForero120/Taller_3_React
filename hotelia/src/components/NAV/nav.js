@@ -15,7 +15,7 @@ class nav extends React.Component{
                   <div class="menu">
                         <Link to="/" className="item">Inicio</Link>
                         <Link to="/" className="item">Ubícanos</Link>
-                        <Link to="/registro" className="item">Opiniones</Link>
+                        <Link to="/" className="item">Opiniones</Link>
                         <Link to="/" className="item"><button ><i class="fa-solid fa-user"></i>Iniciar Sesión</button></Link>
                   </div>
             </nav>

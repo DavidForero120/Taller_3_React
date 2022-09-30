@@ -1,5 +1,6 @@
 import logo from './HoteliaHorizontalBlanco.svg';
 import './form.css';
+import {Link} from 'react-router-dom';
 function form(){
       return(
             <section id="container-grid">
@@ -91,7 +92,7 @@ function form(){
                         </div>
                               <div class="terminos">
                                           <a href="condiciones.html"><p><input type="checkbox"/> Términos y condiciones</p></a>
-                                          <a href="login.html"><button>Ingresar</button></a>
+                                          <Link to="/user"><button>Ingresar</button></Link>
                               </div>          
                         </div>  
                   </div>

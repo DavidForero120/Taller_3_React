@@ -4,14 +4,21 @@ import './css/index.css';
 import reportWebVitals from './reportWebVitals';
 import INICIO from './pages/Inicio';
 import REGISTRO from './pages/Registro';
+import Login from './pages/login';
+import Dashboard from './pages/dashboard';
+
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<INICIO />}/>
       <Route path="/registro" element={<REGISTRO />}/>
+      <Route path="/inicio" element={<Login />}/>
+      <Route path="/dashboard" element={<Dashboard />}/>
+      
     </Routes>
   </BrowserRouter>
   
