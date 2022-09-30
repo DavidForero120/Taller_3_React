@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Sidebar from './components/Sidebar/Sidebar'
+import Sidebar from './components/Sidebar/Sidebar';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Login from './pages/login/login';
 
