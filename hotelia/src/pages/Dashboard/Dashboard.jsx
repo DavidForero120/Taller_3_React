@@ -7,8 +7,12 @@ import './dashboard.css'
 
 function Dashboard(){
     return(
-        
-        <section class="datos">
+
+
+      <div className="sidebar-Container">
+            <Sidebar />
+
+            <section class="datos">
                   <div class="formulario">
                         <div class="titulo">
                               <h1>Bienvenido Usuario</h1> 
@@ -109,6 +113,11 @@ function Dashboard(){
                   
                         
             </section>
+      </div>
+
+      
+        /*
+       */
     );
 }
 
