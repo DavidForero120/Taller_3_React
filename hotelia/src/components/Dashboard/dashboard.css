@@ -12,25 +12,8 @@
     --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
   }
 
-  h1,h2,h3,h4,h5{
+  .h1__dash,.h2__dash,.h3__dash,.h4__dash,.h5__dash{
     font-family: 'Marcellus', serif;
-}
-
-ul{
-    list-style: none;
-    
-}
-.uno{
-    margin-left: -12%;
-}
-.dos{
-    margin-top: 39%;
-    margin-left: -12%;
-
-}
-
-*{
-    margin: 0%;
 }
 .formulario{
     background-color: rgba(255, 255, 255, 0.425);
@@ -39,14 +22,14 @@ ul{
     border-radius: 5px;
     width: 75%;
     height: 90%;
-}.form img{
+}.form .img__dash{
     width: 20%;
-}.titulo{
+}.titulo__dash{
     display: flex;
     justify-content: center;
     margin-top: 2%;
     font-size: 2em;
-}.logo-img img{
+}.logo-img .img__dash{
     width: 60%;
 }.carga{
     background-color: var(--azuloscuro);
@@ -56,12 +39,12 @@ ul{
     justify-content: center;
     align-items: center;
     margin-top: 5%;
-}.carga i{
+}.carga .i__dash{
     font-size: 2em;
     color: #fff;
 }#log-des{
     margin-right: 20%;
-}.logo-img button{
+}.logo-img .button__dash{
     width: 60%;
     height: 4em;
     font-size: 1.2em;
@@ -71,7 +54,16 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
-}.info{
+    border: none;
+}
+.datos{   
+    background: url(./fondo.jpg);
+    background-size: cover;
+    height: 1007px;
+    display: flex;
+   
+}
+.info{
     padding: 5%;
     margin-left: 3%;
     display: flex;
@@ -107,18 +99,18 @@ ul{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}.form input{
+}.form .input__dash{
     margin-top: 4%;
     font-size: 1em;
     color: var(--negro2);
     height: 2em;
     border: none;
     background-color: rgba(255, 255, 255, 0.719);
-}.form label{
+}.form .label__dash{
     font-size: 1.2em;
 
 }
-.act button{
+.act .button__dash{
     font-size: 1em;
     margin-top: 5%;
     width: 30%;
@@ -127,7 +119,7 @@ ul{
     color: white;
     background-color: var(--negro);
 
-}.cambio button{
+}.cambio .button__dash{
     font-size: 1em;
     margin-top: 5%;
     width: 30%;
@@ -141,7 +133,7 @@ ul{
 #inf{
     display: flex;
     flex-direction: column;
-}#inf input{
+}#inf .input__dash{
     width: 130%;
 }.radio{
     display: flex;
@@ -156,33 +148,6 @@ ul{
         display: none;
     }.logo .mobile{
         display: block;
-    }.desc img{
-        display: block;
-        max-width: 40px;
-        width: 100%;
-        border-radius: 8%;
-    }.desc{
-        justify-content: center;
-        align-items: center;
-    }.desc h3,h4{
-        display: none;
-    }.mrd a p{
-        display: none;
-    }.mrd a{
-        justify-content: center;
-    }.cerrar a p{
-        display: none;
-    }.cerrar a{
-        justify-content: center;
-    }.opciones{
-        justify-content: space-around;
-    }.opciones a i:hover{
-        background: var(--azuloscuro);
-        justify-content: center;
-        width: 100%;
-    }.cerrar a:hover{
-        background: var(--azuloscuro);
-        width: 100%;
     }.info{
         font-size: 0.9em;
         display: flex;
@@ -195,7 +160,7 @@ ul{
     }
     .datos{
         height: 100%;
-    }.titulo{
+    }.titulo__dash{
         margin-top: 5%;
         font-size: 1em;
         margin-bottom: 5%;
@@ -207,9 +172,9 @@ ul{
         font-size: 0.8em;
         display: flex;
         flex-direction: column;
-    }.act button{
+    }.act .button__dash{
         width: 80%;
-    }.cambio button{
+    }.cambio .button__dash{
         width: 80%;
     }.radio{
         margin-bottom: 3em;
@@ -243,7 +208,7 @@ ul{
     }
     .datos{
         height: 100%;
-    }.titulo{
+    }.titulo__dash{
         margin-top: 5%;
     }.genero{
         display: flex;
@@ -255,16 +220,16 @@ ul{
         font-size: 1em;
         display: flex;
         flex-direction: column;
-    }.act button{
+    }.act .button__dash{
         width:35%;
-    }.cambio button{
+    }.cambio .button__dash{
         width:35%;
     }.radio{
         margin-bottom: 120%;
     }.form {
         font-size: 1.3em;
         width: 95%;
-    }#inf input{
+    }#inf .input__dash{
         width: 120%;
     }
 }

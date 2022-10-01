@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 :root{
       
     --azulclaro: #48D6ED;
@@ -14,19 +13,13 @@
     --blanco: #fff;
     --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
 }
-*
-{
-    margin: 0;
-}
 .body
 {
-    width: 100vw;
     margin: 0;
     background: url(habitacion.jpeg) no-repeat;
     background-size: cover;
     color: white;
     padding-top: 8rem;
-    height: 100vh;
 }
 #section__login
 {
@@ -50,7 +43,7 @@
     align-items: center;
     padding: 1%;
 }
-.i
+.i__login
 {
     background-color: var(--Magenta);
     font-size: 2rem;
@@ -70,23 +63,20 @@
     margin-bottom: 12px;
     color: #fff;
 }
-.label
+.label__login
 {
     font-family: 'Roboto', sans-serif;
     text-shadow: -1px 1px rgb(97, 97, 97);
 }
-.input
+.input__login
 {
     padding-bottom: 8px;
     border: none;
     padding-left: 5rem;
     border-radius: 2px;
     box-shadow: 0px 1px rgba(97, 97, 97,500);
-}a{
-    text-decoration: none;
-    color: var(--blanco)
 }
-#boton
+.button__login
 {
     font-size: 1rem;
     color: #fff;
@@ -99,12 +89,12 @@
     border-radius: 2px;
     box-shadow: 0px 1px rgba(97, 97, 97,500);
 }
-.p a
+.p__login .a__login
 {
     text-decoration: none;
     color: var(--negro2);
 }
-.p
+.p__login
 {
     font-family: 'Roboto', sans-serif;
     font-size: 0.8rem ;
@@ -112,7 +102,7 @@
     font-weight: bolder;
     text-shadow: -1px 1px rgb(153, 153, 153);
 }
-#logo img
+#logo .img__login
 {
     width:10rem;
 }
@@ -121,7 +111,7 @@
     display: flex;
     justify-content: flex-start;
   
-}form label{
+}.form__login .label__login{
     color: black;
 
 }
@@ -129,12 +119,7 @@
 
 /*movil*/
 @media screen and (min-width: 320px) and (max-width: 480px){
-
-    *
-    {
-        margin: 0;
-    }
-    body
+    .body
     {
         background: url(habitacion.jpeg) no-repeat;
         background-size: cover;
@@ -142,12 +127,12 @@
         color: white;
         padding-top: 5rem;
     }
-    #logo img
+    #logo .img__login
     {
         width:10rem;
     }
     
-    section
+    #section__login
     {
         display: flex;
         flex-direction: column;
@@ -166,7 +151,7 @@
         margin-top: -30%;
     
     }
-    i
+    .i__login
     {
         background-color: var(--Magenta);
         font-size: 2rem;
@@ -186,12 +171,12 @@
         color: #fff;
        
     }
-    label
+    .label__login
     {
         font-family: 'Roboto', sans-serif;
         text-shadow: -1px 1px rgb(97, 97, 97);
     }
-    input{
+    .input__login{
         width: 100%;
         padding-bottom: 8px;
         border: none;
@@ -199,7 +184,7 @@
         border-radius: 2px;
         box-shadow: 0px 1px rgba(97, 97, 97,500);
     }
-    #boton
+    .button__log
     {
         font-size: 1rem;
         color: #fff;
@@ -212,20 +197,17 @@
         border-radius: 2px;
         box-shadow: 0px 1px rgba(97, 97, 97,500);
     }
-    p{
+    .p__login{
         display: none;
-    }form{
+    }.form__login{
     width: 75%;
     }
 }
 
 @media screen and (min-width: 481px) and (max-width: 1024px)
 {
-    *
-    {
-        margin: 0;
-    }
-    body
+    
+    .body
     {
         background: url(habitacion.jpeg) no-repeat;
         background-size: cover;
@@ -237,7 +219,7 @@
         margin-left: 2%;
     }
     
-    section
+    #section__login
     {   
         width: 300px;
         margin-left: auto;
@@ -254,7 +236,7 @@
         margin-top: -12%;
     
     }
-    i
+    .i__login
     {
         background-color: var(--Magenta);
         font-size: 2rem;
@@ -269,20 +251,20 @@
         color: #fff;
        
     }
-    label
+    .label__login
     {
       margin-bottom: 3%;
         font-family: 'Roboto', sans-serif;
         font-size: 1.1em;
     }  
-    #boton
+    .button__log
     {
         font-size: 1em;
         color: #fff;
         background-color: var(--negro2);
         width: 100%;
         font-family: 'Marcellus', serif;        
-    }p{
+    }.p__login{
       font-size: 1em;
     }
 }

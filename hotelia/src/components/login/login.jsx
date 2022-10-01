@@ -9,22 +9,23 @@ function Login(){
       <main className='body'>
         <section id='section__login'>
             <div id="logo">
-              <img src={hoteliaLogo} alt="Logo Hotelia" />
+              <img src={hoteliaLogo} alt="Logo Hotelia" className='img__login'/>
             </div>
             <div className="login">
-              <form action="">
+                <i class="fa-solid fa-user i__login" ></i>
+              <form action="" className='form__login'>
 
                 <div className="iniciosesion">
-                  <label htmlFor="" className='label'>Usuario</label>
-                  <input type="text" name="" id="" className='input'/>
+                  <label htmlFor="" className='label__login'>Usuario</label>
+                  <input type="text" name="" id="" className='input__login'/>
                 </div>
                 <div className="iniciosesion">
-                  <label htmlFor="" className='label'>Contraseña</label>
-                  <input type="password" name="" id="" className='input' />
+                  <label htmlFor="" className='label__login'>Contraseña</label>
+                  <input type="password" name="" id="" className='input__login' />
                 </div>
                 
-                <button id="boton" className='button'><Link to="/dasboard" >Ingresar</Link></button>
-                <p className='p'>¿No tienes una cuenta?<Link to="/registro">Regístrate aquí.</Link> </p>
+                <button id="boton" className='button__login'><Link to="/dasboard" >Ingresar</Link></button>
+                <p className='p__login'>¿No tienes una cuenta?<Link to="/registro">Regístrate aquí.</Link> </p>
               </form>
             </div>
     </section>

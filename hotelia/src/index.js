@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './css/index.css';
+
 import reportWebVitals from './reportWebVitals';
 import INICIO from './pages/Inicio';
 import REGISTRO from './pages/Registro';
 import Login from './pages/login';
 import Dashboard from './pages/dashboard';
+
+import Sidebar from './components/Sidebar/Sidebar'
 
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
@@ -18,6 +20,7 @@ root.render(
       <Route path="/registro" element={<REGISTRO />}/>
       <Route path="/inicio" element={<Login />}/>
       <Route path="/dashboard" element={<Dashboard />}/>
+      <Route path="/side" element={<Sidebar />}/>
       
     </Routes>
   </BrowserRouter>
