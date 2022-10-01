@@ -12,6 +12,7 @@
   --blanco: #fff;
   --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
 }
+
 nav{
       display: flex;
       align-items: center;
@@ -50,7 +51,7 @@ nav{
       .logo1 i{
             display: none;
       }
-      .menu hr{
+      .menu1 hr{
             display: none;
       }.text.t hr{
             display: none;
@@ -63,12 +64,12 @@ nav{
         }
     }
 /*Resolucion media tablet*/
-@media screen and (min-width: 680px) and (max-width: 1024px) {
+@media screen and (min-width: 750px) and (max-width: 1024px) {
 
       .logo1 i{
             display: none;
       }
-      .menu hr{
+      .menu1 hr{
             display: none;
       }.text.t hr{
             display: none;
@@ -88,7 +89,7 @@ nav{
 }
 
 /* Resoluciòn Mobile*/
-@media screen and (min-width:320px) and (max-width: 679px) {
+@media screen and (min-width:320px) and (max-width: 749px) {
       
       .logo1{
             background-color: var(--negro2);
@@ -108,7 +109,7 @@ nav{
             color: var(--blanco);
           font-size: 2rem;
       }
-      .menu{
+      .menu1{
             background-color: rgba(1, 10, 52, 0.838);
             display: flex;
             flex-direction: column;
@@ -116,7 +117,7 @@ nav{
             justify-content: center;  
             
         }
-        .menu hr{
+        .menu1 hr{
             width: 100%;
             background-color: var(--blanco);
         }
@@ -130,7 +131,7 @@ nav{
             text-align: center;
         }
         
-        .menu button{
+        .menu1 button{
             padding: 1rem;
             background-color:transparent;
             border: none;
@@ -144,7 +145,7 @@ nav{
             flex-direction: column;
             padding: 1%;
             background-color: #000;            
-        }.menu{
+        }.menu1{
             width: 100%;
             display: none;
             
@@ -193,7 +194,7 @@ nav{
             font-size: 0.8em;
         }.opiniones{
             overflow: hidden;
-        } .menu.active{
+        } .menu1.active{
             display: grid;
             transform: translateY(0%);
         }

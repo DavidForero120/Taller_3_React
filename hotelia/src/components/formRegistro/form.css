@@ -24,7 +24,7 @@ body{
   h1,h2,h3,h4,h5{
     font-family: 'Marcellus', serif;
 }#container-grid{
-    background:url(hotel-4s.jpg);
+    background:url(./hotel-4s.jpg);
     background-size: cover;
     display: grid;
     grid-template-columns:  repeat(30, 1fr); 
@@ -34,7 +34,7 @@ body{
     background-color: #003564b0;
     grid-column: 1/9;
     grid-row: 1/52;
-}.formulario{
+}.formulario1{
     background-color: rgba(255, 255, 255, 0.651);
     grid-column: 10/30;
     grid-row: 3/ 51;
@@ -58,7 +58,7 @@ body{
     margin-left: 10%;
     width: 80%;
  
-}.formulario{
+}.formulario1{
     display: flex;
     flex-direction: column; 
 }.tittle{
@@ -66,10 +66,10 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 4%;
-}.form{
-    margin-top: 2%;
+}.form1{
+    margin-top: -5%;
     font-size: 1.5em;
- 
+    padding: 3%
 }.radio{
     font-size: 0.9em;
 }.doc{
@@ -80,13 +80,13 @@ body{
     justify-content: space-around;
 }.dat{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }.corre{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }.orig{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }.contra{
     display: flex;
     justify-content: space-around;
@@ -104,27 +104,27 @@ body{
     margin-top: 2%;
     height: 2.2em;
 }.terminos a{
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-decoration: none;
     color: black;
     margin-bottom: 2%;
 }.terminos button{
     font-size: 0.9em;
      width: 8em;
-    height: 2em;
+    height: 1.8em;
     color: #FFFEFC;
     background-color: #000;
 }.text{
     display: none;
 }
 /*movil*/
-@media screen and (min-width: 320px) and (max-width: 620px){
+@media screen and (min-width: 320px) and (max-width: 780px){
    
     .logo{
         background-color: #05498579;
         grid-column: 1/51;
         grid-row: 3/10;
-    }.formulario{
+    }.formulario1{
         grid-column: 2/30;
         grid-row: 11/53;
     }.img{
@@ -168,21 +168,21 @@ body{
     }#inf{
         width: 80%;
         margin-left: 10%;
-    }.form{
+    }.form1{
         font-size: 1em;
     }.terminos{
         font-size: 0.8em;
     }
 }
 /*portatil*/
-@media screen and (min-width: 621px) and (max-width:1024px) {
+@media screen and (min-width: 781px) and (max-width:1024px) {
     .bienvenido{
         font-size: 0.7em;
         margin-left: 5%;
     }.tittle{
         margin-top: 6%;
         font-size: 2em;
-    }.form{
+    }.form1{
         margin-top: 7%;
     }.terminos{
         margin-top: 5%;

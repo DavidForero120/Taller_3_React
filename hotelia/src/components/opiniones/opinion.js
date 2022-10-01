@@ -1,6 +1,7 @@
 import React from 'react';
-import perfil from './perfil.png'
-import './opiniones.css'
+import perfil from './perfil.png';
+import './opiniones.css';
+import TXT from '../../props/lorem'
 class opinion extends React.Component{
       render(){
             return(
@@ -21,12 +22,7 @@ class opinion extends React.Component{
                                                 </div>
                                     </div>
                                     </div>
-                                    <div class="ip">
-                                          <p>Lorem ipsum dolor sit amet, consectet adipiscing elit.
-                                                Elit quis enim ultricies ullamcorper.
-                                                Nunc aenean auctor vel diam dictum.
-                                          </p>
-                                    </div>
+                                    <div class="ip"><TXT /></div>
                               </div>
                               <div id="op">
                                     <div class="enc">
@@ -44,12 +40,7 @@ class opinion extends React.Component{
                                           </div>
                         
                                           </div>
-                                          <div class="ip">
-                                                <p>Lorem ipsum dolor sit amet, consectet adipiscing elit.
-                                                      Elit quis enim ultricies ullamcorper.
-                                                      Nunc aenean auctor vel diam dictum.
-                                                </p>
-                                          </div>
+                                          <div class="ip"><TXT /></div>
                               </div>
                               <div id="op">
                                     <div class="enc">
@@ -66,12 +57,7 @@ class opinion extends React.Component{
                                           </div>
                                           
                                           </div>
-                                          <div class="ip">
-                                                <p>Lorem ipsum dolor sit amet, consectet adipiscing elit.
-                                                      Elit quis enim ultricies ullamcorper.
-                                                      Nunc aenean auctor vel diam dictum.
-                                                </p>
-                                          </div>
+                                          <div class="ip"><TXT /></div>
                               </div>
                   </div>
       

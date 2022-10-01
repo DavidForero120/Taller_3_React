@@ -7,19 +7,18 @@ class nav extends React.Component{
       render(){
             return(
                   <nav>
+                        
                   <div class="logo1">
-                      <img src={log} alt="logo" />
-                      <i class="fa-solid fa-bars hamb"></i>
+                        <img src={log} alt="logo" />
+                        <i class="fa-solid fa-bars hamb"></i>
                   </div>
-                  <div class="menu">
+                  <div class="menu1">
                         <Link to="/" className="item">Inicio</Link>
-                        <Link to="/error" className="item">Ubícanos</Link>
-                        <Link to="/registro" className="item">Opiniones</Link>
-                        <Link to="/" className="item"><button ><i class="fa-solid fa-user"></i>Iniciar Sesión</button></Link>          
+                        <Link to="/" className="item">Ubícanos</Link>
+                        <Link to="/" className="item">Opiniones</Link>
+                        <Link to="/inicio" className="item"><button ><i class="fa-solid fa-user"></i>Iniciar Sesión</button></Link>
                   </div>
-              </nav>
-
-
+            </nav>
                   );
       }
 

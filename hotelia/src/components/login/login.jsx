@@ -24,7 +24,7 @@ function Login(){
                   <input type="password" name="" id="" className='input__login' />
                 </div>
                 
-                <button id="boton" className='button__login'><Link to="/dasboard" >Ingresar</Link></button>
+                <button id="boton" className='button__login'><Link to="/DASH" >Ingresar</Link></button>
                 <p className='p__login'>¿No tienes una cuenta?<Link to="/registro">Regístrate aquí.</Link> </p>
               </form>
             </div>

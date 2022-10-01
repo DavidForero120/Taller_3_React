@@ -59,7 +59,6 @@
 .datos{   
     background: url(./fondo.jpg);
     background-size: cover;
-    height: 1007px;
     display: flex;
    
 }

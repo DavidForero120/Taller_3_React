@@ -11,9 +11,9 @@ function form(){
                         <div class="text"><p>un lugar en tu corazón</p></div>
                   </div>
             </div>
-                              <div class="formulario">
+                              <div class="formulario1">
                               <div class="tittle"><h1>Regístrate</h1></div>
-                        <div class="form">
+                        <div class="form1">
                               <div class="doc">
                                           <div id="inf">
                                                 <label for="tip-doc">Tipo de documento</label>
@@ -45,7 +45,7 @@ function form(){
                                           <input type="date" name="FecNac"/>
                                     </div>
                                     <div id="inf">
-                                          <div class="radio">
+                                          <div class="radio1">
                                                 <label for="fecha">Género</label>
                                                 <input type="radio" name="genero"/>Mujer
                                                 <input type="radio" name="genero"/>Hombre
@@ -92,7 +92,7 @@ function form(){
                         </div>
                               <div class="terminos">
                                           <a href="condiciones.html"><p><input type="checkbox"/> Términos y condiciones</p></a>
-                                          <Link to="/user"><button>Ingresar</button></Link>
+                                          <Link to="/inicio"><button>Ingresar</button></Link>
                               </div>          
                         </div>  
                   </div>

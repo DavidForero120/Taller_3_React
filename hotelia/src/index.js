@@ -19,7 +19,7 @@ root.render(
       <Route path="/" element={<INICIO />}/>
       <Route path="/registro" element={<REGISTRO />}/>
       <Route path="/inicio" element={<Login />}/>
-      <Route path="/dashboard" element={<Dashboard />}/>
+      <Route path="/DASH" element={<Dashboard />}/>
       <Route path="/side" element={<Sidebar />}/>
       
     </Routes>

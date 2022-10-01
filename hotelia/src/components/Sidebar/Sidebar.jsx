@@ -1,6 +1,6 @@
 import React from 'react';
 import './sidebar.css';
-
+import {Link} from 'react-router-dom';
 
 import hoteliaCampana from './hotelia campana.svg';
 import hotelia_h_blanco from './Hotelia horizontal blanco.svg';
@@ -33,7 +33,7 @@ class Sidebar extends React.Component{
                     </div>
     
                     <div className="cerrar">
-                        <a href="index.html" className='a__side'><i class="fa-solid fa-arrow-right-from-bracket" id="menu"></i><p className='p__side'>Cerrar Sesion</p></a>
+                        <Link to="/" className='a__side'><i class="fa-solid fa-arrow-right-from-bracket" id="menu"></i><p className='p__side'>Cerrar Sesion</p></Link>
                     </div>
     
                 </div>
