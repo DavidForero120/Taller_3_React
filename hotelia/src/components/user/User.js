@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useEffect,useState} from "react";
+import './User.css'
 
 function User(){
 
@@ -26,24 +27,38 @@ function User(){
     console.log(list)
     
     return(
-        <>
-            <table border="1">
+        <div id="UserList">
+            <h1>Usuarios</h1>
+            <table id="listUser" class="table table-bordered border border-dark">
                 <tr>
-                    <th>No. Documento</th>
-                    <th>Tipo <br/> Documento</th>
-                    <th>Nombre Apellido</th>
+                    <th class="border border-4" id='dates'>No. Documento</th>
+                    <th class="border border-4" id='dates'>Tipo <br/> Documento</th>
+                    <th class="border border-4" id='dates'>Nombre Apellido</th>
+                    <th class="border border-4" id='dates'>Fecha nacimiento</th>
+                    <th class="border border-4" id='dates'>Genero</th>
+                    <th class="border border-4" id='dates'>Telefono</th>
+                    <th class="border border-4" id='dates'>Correo</th>
+                    <th class="border border-4" id='dates'>Pais de origen</th>
+                    <th class="border border-4" id='dates'>tipo usuario</th>
+                    
                 </tr>
                 {list.map((us,index)=>(
-                    <tr>
+                    <tr id="encList">
                         <td>{us._id}</td>
                         <td>{us.tipodoc}</td>
                         <td>{us.nombre} {us.apellido}</td>
+                        <td>{us.fnacimiento}</td>
+                        <td>{us.genero}</td>
+                        <td>{us.email}</td>
+                        <td>{us.telefono}</td>
+                        <td>{us.paisorigen}</td>
+                        <td>{us.tipouser}</td>
                     </tr>
                 ))
                 }
                 
             </table>
-        </>
+        </div>
     );
     }
 export default User;
