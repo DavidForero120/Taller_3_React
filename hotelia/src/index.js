@@ -6,9 +6,8 @@ import INICIO from './pages/Inicio';
 import REGISTRO from './pages/Registro';
 import Login from './pages/login';
 import Dashboard from './pages/dashboard';
-
 import Sidebar from './components/Sidebar/Sidebar'
-
+import Users from './pages/User'
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +20,7 @@ root.render(
       <Route path="/inicio" element={<Login />}/>
       <Route path="/DASH" element={<Dashboard />}/>
       <Route path="/side" element={<Sidebar />}/>
+      <Route path="/usuario" element={<Users />}/>
       
     </Routes>
   </BrowserRouter>

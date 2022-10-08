@@ -91,7 +91,7 @@ function form(){
                         
                         </div>
                               <div class="terminos">
-                                          <a href="condiciones.html"><p><input type="checkbox"/> Términos y condiciones</p></a>
+                                          <Link to="/usuario"><p><input type="checkbox"/> Términos y condiciones</p></Link>
                                           <Link to="/inicio"><button>Ingresar</button></Link>
                               </div>          
                         </div>  
