@@ -1,159 +1,135 @@
 import axios from "axios";
 import { useState } from "react";
-import logo from './HoteliaHorizontalBlanco.svg';
-import './form.css';
+import { Container, Form } from "react-bootstrap";
 import { useNavigate } from "react-router";
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 
-function Form(){
-
+function Formulario(){
     const history=useNavigate();
-    
-    const [data,setData]=useState({
-      _id:"",
-      tipodoc:"",
-      nombre:"",
-      apellido:"",
-      fnacimiento:"",
-      genero:"",
-      email:"",
-      telefono:"",
-      paisorigen:"",
-      password:"",
-      tipouser:"",
-      foto:"",
-      img:""});
-    
+
+    const [data,setData]=useState({_id:"",tipodoc:"",nombre:"",apellido:"",
+    fnacimiento:"",genero:"",email:"",telefono:"",paisorigen:"",password:"",tipouser:"",img:""});
+  
     const handleChange=({target})=>{
-    
-        setData({
-            ...data,
-            [target.name]:target.value
-        })
+          setData({
+                ...data,
+                [target.name]:target.value
+          })
     }
 
-    const url="https://hoteliakuepa.herokuapp.com/users";  
+  const url="https://hoteliakuepa.herokuapp.com/users";  
 
-        const handleSubmit=async(e)=>{
-            e.preventDefault();
-            const response=await axios.post(url,data);
-            if (response.status === 201) {
-                
+      const handleSubmit=async(e)=>{
+          e.preventDefault();
+          const response=await axios.post(url,data);
+          if (response.status === 201) 
+          {
                 Swal.fire(
-                    'Guardado!',
-                    `El estudiante ${response.data.nombre} ${response.data.apellido} ha sido guardado exitosamente!`,
-                    'success'
+                      'Error!',
+                      'Hubo un problema al registrar el huesped!',
+                      'error'
                 )
-                history.push("/");
-                
-            }else {
+              
+          }
+          else {
                 Swal.fire(
-                    'Error!',
-                    'Hubo un problema al registrar el estudiante!',
-                    'error'
+                      'Guardado!',
+                      `El huesped ha sido guardado exitosamente!`,
+                      'success'
                 )
-            }
-        }
+          }
+      }
 
-        return(
-            <section id="container-grid">
-                <div class="logo">
-                    <div class="img">
-                    <img src={logo} alt="logo"/>
-                    <div class="bienvenido"><p>Eres más que bienvenido</p></div>
-                    <div class="text"><p>un lugar en tu corazón</p></div>
-                    </div>
-                </div>
-                    <div class="formulario1">
-                            <div class="tittle"><h1>Regístrate</h1></div>
-                            <div class="form1">
-                        <form onSubmit={handleSubmit}>
-                            <div class="doc">
-                                        <div id="inf">
-                                            <label for="tip-doc">Tipo de documento</label>
-                                            <select name="tipodoc" value={data.tipodoc} onChange={handleChange} id="tip-doc">
-                                                    <option value="0">Escoja una opción</option>
-                                                    <option value="Cedula de Ciudadania">Cédula</option>
-                                                    <option value="Tarjeta de Identidad">Tarjeta de identidad</option>
-                                                    <option value="Otro">Otro</option>
-                                            </select>
-                                        </div>
-                                        <div id="inf">
-                                            <label for="num-doc">Número documento</label>
-                                            <input type="text" name="_id" value={data._id} onChange={handleChange}  placeholder="10000000"/>
-                                        </div> 
+      return(
+          <div class="formulario">
+                <Container>
+                <div class="tittle"><h1>Regístrate</h1></div>
+                <Form class="form" onSubmit={handleSubmit}>
+                      <div class="doc">
+                            <div class="info">
+                                  <label className="la">Tipo de documento</label>
+                                  <select name="tipodoc" onChange={handleChange}>
+                                        <option>Escoja una opción</option>
+                                        <option value="Cédula">Cédula</option>
+                                        <option value="Tarjeta de identidad">Tarjeta de identidad</option>
+                                        <option value="Otro">Otro</option>
+                                  </select>
                             </div>
-                            <div class="nom1">
-                                <div id="inf">
-                                        <label for="nombres">Nombres</label>
-                                        <input type="text" name="nombre" value={data.nombre} onChange={handleChange}  placeholder="Nombres..."/>
-                                </div>
-                                <div id="inf">
-                                        <label for="Apellidos">Apellidos</label>
-                                        <input type="text" name="apellido" value={data.apellido} onChange={handleChange}  placeholder="Apellidos..."/>
-                                </div> 
+                            <div class="info">
+                                  <label className="la">Número documento</label>
+                                  <input className="in" type="number" placeholder="Ingrese su número de documento" name="_id" value={data._id} onChange={handleChange}/>
+                            </div> 
+                      </div>
+                      <div class="nam">
+                            <div class="info">
+                                  <label className="la">Nombres</label>
+                                  <input className="in"  type="text" placeholder="Ingrese su nombre" name="nombre" value={data.nombre} onChange={handleChange}/>
                             </div>
-                            <div class="dat">
-                                <div id="inf">
-                                        <label for="FecNac">Fecha de nacimiento</label>
-                                        <input type="date" name="fnacimiento" value={data.fnacimiento} onChange={handleChange} />
-                                </div>
-                                <div id="inf">
-                                        <div class="radio1">
-                                            <label for="genero">Género</label>
-                                            <input type="radio" name="genero" />Mujer
-                                            <input type="radio" name="genero"/>Hombre
-                                            <input type="radio" name="genero"/>Otro
-                                        </div>
-                                </div> 
+                            <div class="info">
+                                  <label className="la">Apellidos</label>
+                                  <input className="in" type="text" placeholder="Ingrese su apellido" name="apellido" value={data.apellido} onChange={handleChange}/>
+                            </div> 
+                      </div>
+                      <div class="nac">
+                            <div class="info">
+                                  <label className="la">Fecha de nacimiento</label>
+                                  <input className="in" type="date" placeholder="Fecha" name="fnacimiento" value={data.fnacimiento} onChange={handleChange}/>
                             </div>
-                            <div class="corre">
-                                <div id="inf">
-                                        <label for="Email">Email</label>
-                                        <input type="email" name="email" value={data.email} onChange={handleChange} placeholder="correo..."/>
-                                </div>
-                                <div id="inf">
-                                        <label for="tel">Teléfono de contacto</label>
-                                        <input type="text" name="telefono" value={data.telefono} onChange={handleChange} placeholder="teléfono..."/>
-                                </div> 
+                            <div class="info">
+                                  <label className="la">Email</label>
+                                  <input className="in" type="text" placeholder="Email" name="email" value={data.email} onChange={handleChange}/>
                             </div>
-                            <div class="orig">
-                                <div id="inf">
-                                        <label for="país">País deorigen</label>
-                                        <select name="paísorigen" value={data.paisorigen} onChange={handleChange} id="país">
-                                            <option value="0">Selecciona el Pais</option>
-                                            <option value="Colombia">Colombia</option>
-                                            <option value="Venezuela">Venezuela</option>
-                                            <option value="Narnia">Narnia</option>
-                                            <option value="Mozambique">Mozambique</option>
-                                        </select>
-                                </div>
-                                <div id="inf">
-                                        <label for="photo">Foto</label>
-                                        <input type="file" name="foto" value={data.foto} onChange={handleChange} placeholder="selecionar archivo"/>
-                                </div> 
+                      </div>
+                      <div class="em">
+                            <div class="info">
+                                  <label className="la">Teléfono de contacto</label>
+                                  <input className="in" type="number" placeholder="Ingrese su número de telefono" name="telefono" value={data.telefono} onChange={handleChange}/>
+                            </div> 
+                            <div class="info">
+                                  <label className="la">País deorigen</label>
+                                  <select name="paisorigen" onChange={handleChange}>
+                                        <option>Escoja una opción</option>
+                                        <option value="Venezuela">Venezuela</option>
+                                        <option value="Colombia">Colombia</option>
+                                        <option value="Otro">Otro</option>
+                                  </select>
                             </div>
-                            <div class="contra1">
-                                        <div id="inf">
-                                            <label for="password">Contraseña</label>
-                                            <input type="password" name="password" value={data.password} onChange={handleChange} />
-                                        </div>
-                                        <div id="inf">
-                                            <label for="password2">Confirmar contraseña</label>
-                                            <input type="password2" name="password2"/>
-                                        </div> 
-                    
+                      </div>
+                      <div class="coun">
+                            <div class="info">
+                                  <label className="la">Foto</label>
+                                  <input className="in" type="file" placeholder="Ingrese la URL de la imagen" name="img" value={data.img} onChange={handleChange}/>
+                            </div> 
+                            <div class="info">
+                                  <label className="la">Tipo de Usuario</label>
+                                  <input className="in" type="text" placeholder="Ingrese su rol" name="tipouser" value={data.tipouser} onChange={handleChange}/>
+                            </div> 
+                      </div>
+                      <div class="pass">
+                            <div class="info">
+                                  <label className="la">Contraseña</label>
+                                  <input className="in"  type="password" placeholder="Ingrese su contraseña" name="password" value={data.password} onChange={handleChange}/>
                             </div>
-                            <div class="terminos">
-                                        <p><input type="checkbox"/> Términos y condiciones</p>
-                                        <button type="submit">Ingresar</button>
+                            <div class="info">
+                                  <label className="la">Confirmar Contraseña</label>
+                                  <input className="in" type="password" placeholder="Ingrese su contraseña"/>
                             </div>
-                        </form>
-                                    
-                        </div>  
-                    </div>
-                </section>
+                      </div>
+                      <p id="termino"><input type="checkbox"/>Términos y condiciones</p>
+                      <button className="boton234" onClick={handleSubmit}>Guardar</button>
+                      <div className="modalito" id="modalito">
+                            <div className="modal_cotainer" id="modal_container">
+                                  <span id="close" className="material-symbols-outlined">X</span>
+                                  <h1>Terminos y condiciones</h1>
+                                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque atque, unde officiis sapiente quis aperiam quas perferendis odit ipsam velit exercitationem ratione repudiandae cupiditate tempore laborum nemo iusto, aliquam dolorem!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque corporis voluptatem inventore dolorem eum delectus ratione sapiente veritatis doloribus, ipsam laboriosam et dolorum velit ab fugit! Harum consequatur voluptates sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minus laboriosam, qui sit accusantium iure fuga quos beatae illum, fugiat iste soluta incidunt, molestias id inventore? Pariatur suscipit error iure.</p>
+                            </div>
+                      </div>
+                </Form>
+                </Container>
+          </div>
 
-        );
+
+
+      );
 }
-export default Form;
+export default Formulario;
