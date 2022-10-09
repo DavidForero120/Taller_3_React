@@ -2,7 +2,7 @@ import React from 'react';
 import './desc.css'
 import HoteliaNegro from './Hotelia negro vertical.svg';
 
-import Ubi from '../../props/lorem';
+import Ubi from '../../props/Tubicacion';
 
 class desc extends React.Component{
       render(){

@@ -11,9 +11,10 @@ function form(){
                         <div class="text"><p>un lugar en tu corazón</p></div>
                   </div>
             </div>
-                              <div class="formulario1">
+                        <div class="formulario1">
                               <div class="tittle"><h1>Regístrate</h1></div>
-                        <div class="form1">
+                              <div class="form1">
+                              <form>
                               <div class="doc">
                                           <div id="inf">
                                                 <label for="tip-doc">Tipo de documento</label>
@@ -29,7 +30,7 @@ function form(){
                                                 <input type="text" name="num-doc" placeholder="10000000"/>
                                           </div> 
                               </div>
-                              <div class="nom">
+                              <div class="nom1">
                                     <div id="inf">
                                           <label for="nombres">Nombres</label>
                                           <input type="text" name="nombres" placeholder="Nombres..."/>
@@ -79,7 +80,7 @@ function form(){
                                           <input type="text" name="photo" placeholder="selecionar archivo"/>
                                     </div> 
                               </div>
-                              <div class="contra">
+                              <div class="contra1">
                                           <div id="inf">
                                                 <label for="password">Contraseña</label>
                                                 <input type="password" name="password"/>
@@ -89,11 +90,13 @@ function form(){
                                                 <input type="password2" name="password2"/>
                                           </div> 
                         
-                        </div>
+                              </div>
                               <div class="terminos">
                                           <Link to="/usuario"><p><input type="checkbox"/> Términos y condiciones</p></Link>
                                           <Link to="/inicio"><button>Ingresar</button></Link>
-                              </div>          
+                              </div>
+                              </form>
+                                        
                         </div>  
                   </div>
             </section>
