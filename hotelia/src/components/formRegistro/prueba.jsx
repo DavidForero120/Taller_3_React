@@ -8,19 +8,8 @@ function LadoIzq(){
 
     const history=useNavigate();
     
-    const [data,setData]=useState({
-      _id:"",
-      tipodoc:"",
-      nombre:"",
-      apellido:"",
-      fnacimiento:"",
-      genero:"",
-      email:"",
-      telefono:"",
-      paisorigen:"",
-      password:"",
-      tipouser:"",
-      img:""});
+    const [data,setData]=useState({_id:"",tipodoc:"",nombre:"",apellido:"",
+    fnacimiento:"",genero:"",email:"",telefono:"",paisorigen:"",password:"",tipouser:"",img:""});
     
     const handleChange=({target})=>{
     
