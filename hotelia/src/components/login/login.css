@@ -30,7 +30,6 @@
     opacity: 0.82;
     width: 314px;
     height: 100%;
-   margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
@@ -72,7 +71,6 @@
 {
     padding-bottom: 8px;
     border: none;
-    padding-left: 5rem;
     border-radius: 2px;
     box-shadow: 0px 1px rgba(97, 97, 97,500);
 }
@@ -114,6 +112,9 @@
 }.form__login .label__login{
     color: black;
 
+}a{
+    text-decoration:  none;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -130,19 +131,21 @@
     #logo .img__login
     {
         width:10rem;
-    }
-    
-    #section__login
-    {
+    }#logo {
+        display: flex;
+        justify-content: flex-start;
+        margin-top:8%;
+        margin-left:4%;
+      }
+    #section__login {
         display: flex;
         flex-direction: column;
-        justify-content: center;    
+        justify-content: center;
         padding-bottom: 2rem;
-    
         background-size: cover;
-        margin-top: 35%;
-        height: 45%;
-    }
+        margin-top: 13%;
+        height: 59%;
+      }
     .login
     {
         display: flex;
@@ -219,15 +222,15 @@
         margin-left: 2%;
     }
     
-    #section__login
-    {   
+    #section__login {
         width: 300px;
         margin-left: auto;
         margin-right: auto;
         background-size: cover;
-        margin-top: 20%;
-        height: 40%;
-    }
+        margin-top: 5%;
+        height: 47%;
+        padding: 2%;
+      }
     .login
     {
         display: flex;
@@ -236,6 +239,12 @@
         margin-top: -12%;
     
     }
+    .login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -27%;
+}
     .i__login
     {
         background-color: var(--Magenta);
@@ -266,5 +275,7 @@
         font-family: 'Marcellus', serif;        
     }.p__login{
       font-size: 1em;
+    }#boton{
+        margin-top:1%;
     }
 }

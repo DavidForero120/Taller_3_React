@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect,useState} from "react";
 import './User.css'
-
+import {Link} from 'react-router-dom';
 function User(){
 
     /*1. Definir url del api, generar peticiones asíncronas */
@@ -28,8 +28,10 @@ function User(){
     
     return(
         <div id="UserList">
+             <Link to="/car"><button>Actualizar usuario</button></Link>
+             <Link to="/registro"><button>Registrar usuario</button></Link>
             <h1>Usuarios</h1>
-            <table id="listUser" class="table table-bordered border border-dark">
+            <table id="listUser" class="table table-sm">
                 <tr>
                     <th class="border border-4" id='dates'>No. Documento</th>
                     <th class="border border-4" id='dates'>Tipo <br/> Documento</th>
@@ -44,15 +46,15 @@ function User(){
                 </tr>
                 {list.map((us,index)=>(
                     <tr id="encList">
-                        <td>{us._id}</td>
-                        <td>{us.tipodoc}</td>
-                        <td>{us.nombre} {us.apellido}</td>
-                        <td>{us.fnacimiento}</td>
-                        <td>{us.genero}</td>
-                        <td>{us.email}</td>
-                        <td>{us.telefono}</td>
-                        <td>{us.paisorigen}</td>
-                        <td>{us.tipouser}</td>
+                        <td class="border border-4">{us._id}</td>
+                        <td class="border border-4">{us.tipodoc}</td>
+                        <td class="border border-4">{us.nombre} {us.apellido}</td>
+                        <td class="border border-4">{us.fnacimiento}</td>
+                        <td class="border border-4">{us.genero}</td>
+                        <td class="border border-4">{us.email}</td>
+                        <td class="border border-4">{us.telefono}</td>
+                        <td class="border border-4">{us.paisorigen}</td>
+                        <td class="border border-4">{us.tipouser}</td>
                     </tr>
                 ))
                 }

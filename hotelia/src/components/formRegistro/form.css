@@ -1,198 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:wght@300&display=swap');
-:root{
-      
-    --azulclaro: #48D6ED;
-    --azuloscuro: #337AB7;
-    --azulnegro: #303342;
-    --negro: #333333;
-    --negro2: #000;
-    --gris: #B2B3B3;
-    --fondo: #FFFEFC;
-    --verdeazul: #157A8A;
-    --Magenta: #9C2759;
-    --blanco: #fff;
-    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+.formulario_R{
+    margin: 0%;
+    width: 100%;
+    background-color: grey;
+    padding-top: 3%;
+    
+}#CR{
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    
 }
-*{
-    margin:0;
-}
-body{
-    font-family: 'Marcellus', serif;
-    font-size: 16px;
-}
- 
-  h1,h2,h3,h4,h5{
-    font-family: 'Marcellus', serif;
-}#container-grid{
-    background:url(./hotel-4s.jpg);
-    background-size: cover;
-    display: grid;
-    grid-template-columns:  repeat(30, 1fr); 
-    grid-template-rows: repeat(51, 19.75px);
-   
-}.logo{
-    background-color: #003564b0;
-    grid-column: 1/9;
-    grid-row: 1/52;
-}.formulario1{
-    background-color: rgba(255, 255, 255, 0.651);
-    grid-column: 10/30;
-    grid-row: 3/ 51;
-    border-radius: 14px;
-}.img img{
-    width: 80%;
-    font-family: M;
-}
-.img{
-    margin-top: -12%;
-    color: white;
-    font-size: 3em;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}.bienvenido P{
-    font-size: 0.8em;
-    margin-top: 5%;
-    margin-left: 10%;
-    width: 80%;
- 
-}.formulario1{
-    display: flex;
-    flex-direction: column; 
-}.tittle{
-    font-size: 2.5em;
-    display: flex;
-    justify-content: center;
-    margin-top: 4%;
-}.form1{
-    margin-top: -5%;
-    font-size: 1.5em;
-    padding: 3%
-}.radio{
-    font-size: 0.9em;
-}.doc{
-    display: flex;
-    justify-content: space-between;
-}.nom1{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0;
-}.dat{
-    display: flex;
-    justify-content: space-between;
-}.corre{
-    display: flex;
-    justify-content: space-between;
-}.orig{
-    display: flex;
-    justify-content: space-between;
-}.contra1{
-    display: flex;
-    justify-content: space-between;
-}.terminos{
-    margin-top: 3%;
+#Side_r{
+    background-color: rgba(30, 110, 190, 0.748);
     display: flex;
     flex-direction: column;
-    align-items: center;
-}#inf{
+    align-items:center;
+    justify-content: center;
+    margin-top: 10%;
+    padding-top: 3%;
+    width:100%;
+}#logo_r{
+    display: flex;
+    justify-content: center;
+}
+#logo_r  img{
     width: 40%;
-    margin-top: 2%;
+}
+#lugar_r, #lugar_r h1{
+    color: white;
+    font-size: 1em; 
+    margin-top: 1%;   
+}
+#registro_r{
+    background-color: rgba(251, 247, 247, 0.696);
+    margin: 7%;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
-}#inf input, select{
+    justify-content: center;
+    align-items: center;
+}
+.info_r{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info_r label{
+   margin-bottom: 2%;
+   margin-top: 3%;
+   font-size: 0.9em;
+}
+.info_r div{
+    display: flex;
+    justify-content: flex-start;
+    width: 12em;
+}
+.info_r input, .info_r select{
+    display: flex;
+    justify-content: flex-start;
+    width: 15em;
+    height: 2.3em;
+    font-size: 0.8em;
+}
+.info_r input::placeholder{
+    font-size: 0.8em;
+}
+.info_r2, .info_r2 button{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 1%;
     margin-top: 2%;
-    height: 2.2em;
-}.terminos a{
-    font-size: 1.2em;
-    text-decoration: none;
-    color: black;
+}
+/*tablet*/
+@media screen and (min-width: 500px) {
+    
+.info_r label{
     margin-bottom: 2%;
-}.terminos button{
+    margin-top: 3%;
     font-size: 0.9em;
-     width: 8em;
-    height: 1.8em;
-    color: #FFFEFC;
-    background-color: #000;
-}.text{
-    display: none;
+ }
+ .info_r div{
+     display: flex;
+     justify-content: flex-start;
+     width: 20em;
+ }
+ .info_r input, .info_r select{
+     display: flex;
+     justify-content: flex-start;
+     width: 20em;
+     height: 2em;
+     font-size: 1em;
+ }
+ .info_r input::placeholder{
+     font-size: 0.8em;
+ }
+ .info_r2, .info_r2 button{
+     display:flex;
+     justify-content: center;
+     margin-bottom: 1%;
+     margin-top: 2%;
+ }
 }
-/*movil*/
-@media screen and (min-width: 320px) and (max-width: 780px){
-   
-    .logo{
-        background-color: #05498579;
-        grid-column: 1/51;
-        grid-row: 3/10;
-    }.formulario1{
-        grid-column: 2/30;
-        grid-row: 11/53;
-    }.img{
-        margin-top: 0%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }.logo img{
-
-        width: 60%;
-    }.bienvenido{
-        display: none;
-    }.tittle{
-        font-size: 1.3em;
-    }.text{
+/*media tablet*/
+@media screen and (min-width: 620px) {
+    #lugar_r, #lugar_r h1 {
+        color: white;
+        font-size: 1.2em;
         margin-top: 1%;
-        display: flex;
-        font-size: 0.5em;
-    }.radio{
-        font-size: 1em;
-    }.doc{
-        display: flex;
-        flex-direction: column;
-    }.nom1{
-        display: flex;
-        flex-direction: column;
-    }.dat{
-        display: flex;
-        flex-direction: column;
-    }.corre{
-        display: flex;
-        flex-direction: column;
-    }.orig{
-        display: flex;
-        flex-direction: column;
-    }.contra1{
-        
-        display: flex;
-        flex-direction: column;
-    }#inf{
-        width: 80%;
-        margin-left: 10%;
-    }.form1{
-        font-size: 1em;
-    }.terminos{
-        font-size: 0.8em;
-    }
-}
-/*portatil*/
-@media screen and (min-width: 781px) and (max-width:1024px) {
-    .bienvenido{
-        font-size: 0.7em;
-        margin-left: 5%;
-    }.tittle{
-        margin-top: 6%;
-        font-size: 2em;
-    }.form1{
-        margin-top: 7%;
-    }.terminos{
-        margin-top: 5%;
-    }#inf label{
-        font-size: 0.9em;
-    }#inf input, select{
-        margin-top: 2%;
-        height: 1.7em;
-        font-size: 0.9em;
+      }
+    .tittle_r{
+      margin-top: 5%;  
     }
 
+}
+
+/*portatil*/
+@media screen and (min-width: 720px) {
+    
 }

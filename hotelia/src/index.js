@@ -8,6 +8,8 @@ import Login from './pages/login';
 import Dashboard from './pages/dashboard';
 import Sidebar from './components/Sidebar/Sidebar'
 import Users from './pages/User'
+import Card from './components/actualizar/card'
+import ListarAc from './components/actualizar/actualizar'
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,7 +23,7 @@ root.render(
       <Route path="/DASH" element={<Dashboard />}/>
       <Route path="/side" element={<Sidebar />}/>
       <Route path="/usuario" element={<Users />}/>
-      
+      <Route path="/car" element={<ListarAc />}/>
     </Routes>
   </BrowserRouter>
   
