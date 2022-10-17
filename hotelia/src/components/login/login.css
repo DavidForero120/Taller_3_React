@@ -207,6 +207,8 @@
     }
 }
 
+/*movil*/
+
 @media screen and (min-width: 481px) and (max-width: 1024px)
 {
     
@@ -279,3 +281,4 @@
         margin-top:1%;
     }
 }
+

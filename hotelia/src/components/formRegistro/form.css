@@ -116,5 +116,81 @@
 
 /*portatil*/
 @media screen and (min-width: 720px) {
-    
+    #CR{
+        display: flex;
+    }
+    #Side_r{
+        display: flex;
+        width: 7em;
+        margin-top: 0%;
+    }
+
+    #registro_r{
+        margin: 7%;
+        width: 100%;
+    }
+
+    #logo_r  img {
+        width: 90%;
+    }
+    #lugar_r, #lugar_r h1 {
+        color: white;
+        font-size: 1em;
+        margin-top: 10%;
+        text-align: center;
+    }
+    .form_camp{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .info_r div {
+        display: flex;
+        justify-content: flex-start;
+        width: 13em;
+    }
+    .info_r input{
+        width: 13em;
+    }
+
+    .info_r select{
+        width: 13em;
+    }
+
+    .info_r{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 35em;
+        padding: 1em;
+    }
+
+}
+
+/*desktop*/
+@media screen and (min-width: 1200px) {
+    #registro_r{
+        margin: 2em;
+    }
+    .info_r{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 60em;
+        padding: 1em;
+        margin-left: -5em;
+    }
+
+    .info_r input{
+        width: 20em;
+    }
+
+    .info_r select{
+        width: 20em;
+    }
+    #Side_r{
+        width: 14em;
+    }
 }

@@ -53,59 +53,99 @@ function Formulario(){
                   <div id="registro_r">
                         <div class="tittle_r"><h1>Regístrate</h1></div>
                         <Form class="form_r" onSubmit={handleSubmit}>
-                        
-                              <div class="info_r">
-                                    <div><label className="la">Tipo de documento:</label></div>
-                                    <select name="tipodoc" onChange={handleChange}>
-                                          <option>Escoja una opción</option>
-                                          <option value="Cédula">Cédula</option>
-                                          <option value="Tarjeta de identidad">Tarjeta de identidad</option>
-                                          <option value="Otro">Otro</option>
-                                    </select>
+
+                        <div class="info_r">
+                                    <div className="form_camp">
+                                          <div><label className="la">Tipo de documento:</label></div>
+                                          <select name="tipodoc" onChange={handleChange}>
+                                                <option>Escoja una opción</option>
+                                                <option value="Cédula">Cédula</option>
+                                                <option value="Tarjeta de identidad">Tarjeta de identidad</option>
+                                                <option value="Otro">Otro</option>
+                                          </select>
+                                                                           
+                              
+                                    </div>
+                                    <div className="form_camp">
                                           <div><label className="la">Número documento:</label></div>
                                           <input className="in" type="number" placeholder="Ingrese su número de documento" name="_id" value={data._id} onChange={handleChange}/>
-                                    
+                                    </div>
                               </div>
+                        
+                              
 
                               <div class="info_r">
+                                    <div className="form_camp">
                                           <div><label className="la">Nombres:</label></div>
                                           <input className="in"  type="text" placeholder="Ingrese su nombre" name="nombre" value={data.nombre} onChange={handleChange}/>
+                                                                           
+                              
+                                    </div>
+                                    <div className="form_camp">
                                           <div><label className="la">Apellidos:</label></div>
-                                          <input className="in" type="text" placeholder="Ingrese su apellido" name="apellido" value={data.apellido} onChange={handleChange}/>                                 
+                                          <input className="in" type="text" placeholder="Ingrese su apellido" name="apellido" value={data.apellido} onChange={handleChange}/>
+                                    </div>
+                              </div>
+
+                              
+
+                              <div class="info_r">
+                                    <div className="form_camp">
+                                          <div><label className="la">Fecha de nacimiento:</label></div>
+                                          <input className="in" type="date" placeholder="Fecha" name="fnacimiento" value={data.fnacimiento} onChange={handleChange}/>
+                                                                           
+                              
+                                    </div>
+                                    <div className="form_camp">
+                                          <div><label className="la">Email:</label></div>
+                                          <input className="in" type="text" placeholder="Email" name="email" value={data.email} onChange={handleChange}/>
+                                    </div>
                               </div>
 
                               <div class="info_r">
-                                    <div><label className="la">Fecha de nacimiento:</label></div>
-                                    <input className="in" type="date" placeholder="Fecha" name="fnacimiento" value={data.fnacimiento} onChange={handleChange}/>
-                                    <div><label className="la">Email:</label></div>
-                                    <input className="in" type="text" placeholder="Email" name="email" value={data.email} onChange={handleChange}/>
-                              </div>
-
-                              <div class="info_r">
-                                    <div><label className="la">Teléfono de contacto:</label></div>
-                                    <input className="in" type="number" placeholder="Ingrese su número de telefono" name="telefono" value={data.telefono} onChange={handleChange}/>
+                                    <div className="form_camp">
+                                          <div><label className="la">Teléfono de contacto:</label></div>
+                                          <input className="in" type="number" placeholder="Ingrese su número de telefono" name="telefono" value={data.telefono} onChange={handleChange}/>
+                                                                           
+                              
+                                    </div>
+                                    <div className="form_camp">
                                           <div><label className="la">País de origen:</label></div>
-                                    <select name="paisorigen" onChange={handleChange}>
-                                          <option>Escoja una opción:</option>
-                                          <option value="Venezuela">Venezuela</option>
-                                          <option value="Colombia">Colombia</option>
-                                          <option value="Otro">Otro</option>
-                                    </select>
+                                          <select name="paisorigen" onChange={handleChange}>
+                                                <option>Escoja una opción:</option>
+                                                <option value="Venezuela">Venezuela</option>
+                                                <option value="Colombia">Colombia</option>
+                                                <option value="Otro">Otro</option>
+                                          </select>
+                                    </div>
                               </div>
 
                               <div class="info_r">
-                                    <div><label className="la">Foto:</label></div>
-                                    <input className="in" type="file" placeholder="Ingrese la URL de la imagen" name="img" value={data.img} onChange={handleChange}/>
-                                    <div><label className="la">Tipo de Usuario:</label></div>
-                                    <input className="in" type="text" placeholder="Ingrese su rol" name="tipouser" value={data.tipouser} onChange={handleChange}/>
+                                    <div className="form_camp">
+                                          <div><label className="la">Foto:</label></div>
+                                          <input className="in" type="file" placeholder="Ingrese la URL de la imagen" name="img" value={data.img} onChange={handleChange}/>
+                                                                           
+                              
+                                    </div>
+                                    <div className="form_camp">
+                                          <div><label className="la">Tipo de Usuario:</label></div>
+                                          <input className="in" type="text" placeholder="Ingrese su rol" name="tipouser" value={data.tipouser} onChange={handleChange}/>
+                                    </div>
                               </div>
 
                               <div class="info_r">
-                                    <div><label className="la">Contraseña:</label></div>
-                                    <input className="in"  type="password" placeholder="Ingrese su contraseña" name="password" value={data.password} onChange={handleChange}/>
-                                    <div><label className="la">Confirmar Contraseña:</label></div>
-                                    <input className="in" type="password" placeholder="Ingrese su contraseña"/>
+                                    <div className="form_camp">
+                                          <div><label className="la">Contraseña:</label></div>
+                                          <input className="in"  type="password" placeholder="Ingrese su contraseña" name="password" value={data.password} onChange={handleChange}/>
+                                                                           
+                              
+                                    </div>
+                                    <div className="form_camp">
+                                          <div><label className="la">Confirmar Contraseña:</label></div>
+                                          <input className="in" type="password" placeholder="Ingrese su contraseña"/>
+                                    </div>
                               </div>
+
 
                               <div class="info_r2">
                                     <Link to="/usuario"><p id="termino"><input type="checkbox"/>Términos y condiciones</p></Link>
