@@ -48,7 +48,7 @@ function Formulario(){
                 <div id="CR">
                   <div id="Side_r">
                         <div id="logo_r"><img src={image} alt="logo"></img></div>
-                        <div  id="lugar_r"><h1>Un lugar en tu corazón</h1></div>
+                        <div  id="lugar_r"><h1>Eres mas que bienvenido</h1></div>
                   </div>
                   <div id="registro_r">
                         <div class="tittle_r"><h1>Regístrate</h1></div>

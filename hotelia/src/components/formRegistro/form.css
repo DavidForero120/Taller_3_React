@@ -1,8 +1,11 @@
 .formulario_R{
     margin: 0%;
     width: 100%;
-    background-color: grey;
+    
     padding-top: 3%;
+    background-image: url(R.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }#CR{
     margin-left: 0% !important;
@@ -165,6 +168,9 @@
         width: 35em;
         padding: 1em;
     }
+    .formulario_R{
+        padding-top: 0;
+    }
 
 }
 
@@ -192,5 +198,8 @@
     }
     #Side_r{
         width: 14em;
+    }
+    .formulario_R{
+        padding-top: 0;
     }
 }
